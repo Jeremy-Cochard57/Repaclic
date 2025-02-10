@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.carousel-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.swiper-slide {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.swiper-slide h3 {
+    margin: 10px 0;
+}
+
+.swiper-slide a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Conteneur gris si aucune actualité */
+.no-news {
+    background: #ddd;
+    color: #666;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}

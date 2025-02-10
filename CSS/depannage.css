@@ -1,0 +1,192 @@
+/*SOLUTION DE DEPANNAGE*/
+.PriseEnMain {
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    margin: 0px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+
+.PriseEnMain h1 {
+    margin-bottom: 25px;
+}
+
+.priseEnMainDistance {
+    margin-bottom: 10px;
+}
+
+.priseEnMainDistance p {
+    margin-bottom: 5px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+    margin-left: 40px;
+}
+
+.image img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.PriseEnMain h1 {
+    color: hsl(135, 45%, 47%);
+}
+
+.teamviewer {
+    color: hsl(135, 45%, 47%);
+    font-size: 18px;
+
+}
+
+.separator {
+    border-top: 2px solid hsl(135, 45%, 47%);
+    margin: 20px auto;
+    width: 20%;
+}
+
+.separatorB {
+    border-top: 2px solid hsl(135, 45%, 47%);
+    margin: 10px auto;
+    width: 40%;
+    margin-bottom: 60px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service {
+    text-align: center;
+    max-width: 250px;
+    margin: 20px;
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/*Atouts*/
+.Atouts {
+    color: hsl(135, 45%, 47%);
+    margin-bottom: 10px;
+}
+
+.descAtouts {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Conteneur d'intervention */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: auto;
+}
+
+.container {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Redimensionnement automatique des images */
+.container img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    /* Centre l’image */
+}
+
+.container h3 {
+    color: hsl(135, 45%, 47%);
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.container p {
+    font-size: 14px;
+    color: #333;
+}
+
+/*promotion*/
+.promotion {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.promotion .ancien-prix {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 5px;
+}
+
+.promotion .nouveau-prix {
+    color: green;
+}
+
+
+@media (max-width: 768px) {
+    .PriseEnMain {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        padding-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .wrapper .container {
+        width: 90%;
+    }
+    .text{
+        text-align: left;
+    }
+    .PriseEnMain h1{
+        text-align: center;
+    }
+}

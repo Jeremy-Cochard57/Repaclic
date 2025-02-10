@@ -1,0 +1,31 @@
+<!-- Fenêtre contenant le numéro de téléphone et les horaires -->
+<div class="bubble">
+    <span class="phone-icon">📞</span>
+    <a href="tel">
+        <span class="phone-number"><br>Assistance 24/7
+    </a>
+</div>
+
+
+<!-- Code d'intégration chatbot -->
+<div id="chatBtn" class="chat-btn">
+    💬
+</div>
+
+<script src="https://code.tidio.co/ton_code_unique.js" async></script>
+
+<script>
+    setTimeout(function () {
+        document.getElementById("chatBtn").style.display = "flex";
+    }, 0);
+
+    // Fonction pour ouvrir et fermer la fenêtre du chat
+    document.getElementById("chatBtn").addEventListener("click", function () {
+        var chatPopup = document.querySelector('.chat-popup');
+        if (chatPopup.style.display === "none" || chatPopup.style.display === "") {
+            chatPopup.style.display = "block"; // Ouvre le chat
+        } else {
+            chatPopup.style.display = "none"; // Ferme le chat
+        }
+    });
+</script>
